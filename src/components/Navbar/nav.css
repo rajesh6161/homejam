@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.navbar li {
+  display: inline;
+  padding-left: 25px;
+  padding-right: 25px;
+  position: relative;
+}
+
+.navbar .leftBox img {
+  height: 60px;
+}
+.navbar .bi-search {
+  padding-right: 5px;
+  position: absolute;
+  left: 0px;
+  bottom: 0.3px;
+}
+.navbar .bi-person-bounding-box {
+  position: absolute;
+  padding-left: 12px;
+  bottom: 0.3px;
+}

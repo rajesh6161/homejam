@@ -1,0 +1,109 @@
+.showContainer {
+  padding-top: 100px;
+}
+.showHead {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.showHead h2 {
+  position: relative;
+}
+.showHead h2::after {
+  height: 3px;
+  display: block;
+  width: 60px;
+  position: absolute;
+  left: 0%;
+  bottom: -20%;
+  background-color: rgb(5, 48, 240);
+  content: '';
+}
+#gold a {
+  color: gold;
+}
+.cardx {
+  top: 60px;
+  position: relative;
+}
+.cardContainer {
+  height: 500px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+#cardFront {
+  display: flex;
+  flex-direction: column;
+  background-color: #111229;
+  z-index: 100;
+  height: auto;
+  width: 283px;
+  border-radius: 15px;
+  position: relative;
+  margin-right: 20px;
+}
+.imageContainer img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 250px;
+  width: 280px;
+  object-fit: cover;
+}
+.tag {
+  background-color: gold;
+  width: 40px;
+
+  text-align: center;
+  font-size: 14px;
+}
+.cardContent {
+  padding: 15px;
+}
+.cardContent h3 {
+  color: #fff;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info i {
+  background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+  background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+}
+.info a {
+  background: linear-gradient(to bottom, #e72c83 0%, #a742c6 100%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cardBack {
+  height: 390px;
+  width: 275px;
+  background: linear-gradient(90deg, #6741c5 0%, #2e216d 100%);
+  position: absolute;
+  top: -6px;
+  left: 15px;
+  z-index: 0;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .showContainer {
+    padding-top: 200px;
+  }
+  .showHead h2 {
+    position: relative;
+    font-size: 24px;
+  }
+}
